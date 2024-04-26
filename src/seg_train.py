@@ -249,7 +249,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input",
         type=str,
-        default="/content/exp.json",
+        default="configs/exp.json",
         help="expriment configuration",
     )
     args = parser.parse_args()
