@@ -13,7 +13,7 @@
         "name":"dda_+",
         "lr":3e-4,
         "tmax": 30,
-        "results_dir":"results",
+        "results_dir":"results/dynunet_v5",
         "log": true,
         "step_val": 1
     }
