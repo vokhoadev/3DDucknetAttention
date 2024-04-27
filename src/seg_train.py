@@ -237,7 +237,7 @@ def main(data):
 
     logger = None
     if config['log'] == True:
-        logger = wandb.init(project=data['project'], name = config['name'], config=config, dir="/kaggle/working/3DDucknetAttention/src/results")
+        logger = wandb.init(project=data['project'], name = config['name'], config=config, dir="/kaggle/working/")
 
     ## Run
     run(model, train_loader, val_loader, optimizer, loss_function, lr_scheduler, metric, metric_batch, logger, config, sepoch = epoch)
