@@ -3,6 +3,7 @@
     "att": [], 
     "project": "mrbrains",
     "model_trained": "experiments/dynunet_a95x6cm1/3DDucknetAttention/src/results/best_metric_model.pth", 
+    "reset_epoch": false,
     "datalist": "configs/datalist.json",
     "in_channel":	4,
 	"out_channel":	3,
