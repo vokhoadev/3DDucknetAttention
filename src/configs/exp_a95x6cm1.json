@@ -2,7 +2,7 @@
     "model_name": "dynunet",
     "att": [], 
     "project": "mrbrains",
-    "model_trained": "experiments/dynunet_a95x6cm1/3DDucknetAttention/src/results/best_metric_model.pth", 
+    "model_trained": "/kaggle/working/experiments/dynunet_a95x6cm1/3DDucknetAttention/src/results/best_metric_model.pth", 
     "reset_epoch": false,
     "datalist": "configs/datalist.json",
     "in_channel":	4,
@@ -13,7 +13,7 @@
         "name":"dda_+",
         "lr":3e-4,
         "tmax": 30,
-        "results_dir":"results/dynunet_v5",
+        "results_dir":"results",
         "log": true,
         "step_val": 1
     }
