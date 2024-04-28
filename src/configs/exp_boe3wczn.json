@@ -1,0 +1,21 @@
+{
+    "model_name": "dynunet",
+    "att": [], 
+    "project": "mrbrains",
+    "model_trained": "/kaggle/input/3da-boe3wczn/3DDucknetAttention/src/results/best_metric_model.pth", 
+    "reset_epoch": false,
+    "datalist": "configs/datalist.json",
+    "in_channel":	4,
+	"out_channel":	3,
+    "config":{
+        "loss": "mse",
+        "max_epochs": 120,
+        "name":"dda_+",
+        "lr":3e-4,
+        "tmax": 30,
+        "results_dir":"results",
+        "log": true,
+        "step_val": 1
+    }
+}    
+
