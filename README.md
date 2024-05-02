@@ -1,10 +1,13 @@
 # 3DDucknetAttention
 
-How to use?
-~ python utils/setup.py <!your wandb key or empty>
-Prepair you datalist
+# Setup
+!python utils/setup.py <!your wandb key or empty>
 
-~ python libs/data/prepare_datalist.py --path "<folder_contain_dataset>" --output "/{path of file}/datalist.json" --stage "train" --split 'true'
+# Prepair you datalist
+!python libs/data/prepare_datalist.py --path "<folder_contain_dataset>" --output "/{path of file}/datalist.json" --stage "train" --split 'true'
+
+VD: 
+!python libs/data/prepare_datalist.py --path "/kaggle/input/miccai-brats2018-original-dataset/MICCAI_BraTS_2018_Data_Training" --output "/kaggle/working/datalist.json" --stage "train" --split 'true'
 
 # For training
 
@@ -38,6 +41,9 @@ configs\exp.json
 3D Dual-Domain Attention
 Fill model_trained in exp.json then run
 
-~ python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "test" 
+!python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "test" 
+
+VD:
+!python libs/data/prepare_datalist.py --path "/kaggle/input/miccai-brats2018-original-dataset/MICCAI_BraTS_2018_Data_Validation" --output "/kaggle/working/datalist.json" --stage "test" --split 'false' --csv /kaggle/input/miccai-brats2018-original-dataset/MICCAI_BraTS_2018_Data_Validation/survival_evaluation.csv
 
 ~ python 3d_dda.py --input <your exp.json file>
