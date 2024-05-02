@@ -1,5 +1,13 @@
 # 3DDucknetAttention
 
+How to use?
+~ python utils/setup.py <!your wandb key or empty>
+Prepair you datalist
+
+~ python libs/data/prepare_datalist.py --path "<folder_contain_dataset>" --output "/{path of file}/datalist.json" --stage "train" --split 'true'
+
+# For training
+
 configs\exp.json
 {
     "model_name": "dynunet", //one in [segresnet, dynunet, vnet, swinunetr, dynunet_dda]",
@@ -21,3 +29,15 @@ configs\exp.json
         "step_val": 1
     }
 }
+
+# Training:
+
+~ python seg_train.py --input <your exp.json file>
+
+# Predict
+3D Dual-Domain Attention
+Fill model_trained in exp.json then run
+
+~ python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "test" 
+
+~ python 3d_dda.py --input <your exp.json file>
